@@ -432,16 +432,7 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
         import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
         import { getFirestore, collection, addDoc, getDocs, doc, updateDoc, deleteDoc, query, where, orderBy, onSnapshot } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
-
-        // Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyBPxeu8KgLtpAb7EBAnLkoYWJPd12Bb-lI",
-            authDomain: "courage-cb418.firebaseapp.com",
-            projectId: "courage-cb418",
-            storageBucket: "courage-cb418.firebasestorage.app",
-            messagingSenderId: "294386834641",
-            appId: "1:294386834641:web:62bf2b29fb1ce420c239f0"
-        };
+        import { firebaseConfig } from "./config.js";
 
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
